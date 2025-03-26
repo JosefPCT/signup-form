@@ -80,11 +80,18 @@ added flex values, notably a flex basis of 30vw for the left container to occupy
 /* 
 added flex values, notably a flex basis of 70vw for the right container to occupy 30% of the viewport
 100vh to occupy the whole viewport height
+made a flex container to center content of the right container
+change flex-direction from default to column
+and use justify-content to  center along y axis
 */
 .right-container {
     flex: 1 1 70vw;
     border: 5px solid green;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+   
 }
 
 /*  
@@ -107,5 +114,10 @@ added align-self, to center content along the y axis
 .logo-container p{
     border: 1px solid red;
     align-self: center;
+
+}
+
+
+.right-container div{
 
 }
