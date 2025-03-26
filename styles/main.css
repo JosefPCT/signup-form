@@ -1,3 +1,6 @@
+
+
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -56,6 +59,19 @@
 
 /* START CODING here*/
 
+/* custom font
+fixed path
+*/
+@font-face {
+  font-family: 'Norse';
+  src: url('fonts/Norse-Bold.woff2') format('woff2'),
+      url('fonts/Norse-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 div{
     border: 1px dotted black;
 }
@@ -69,12 +85,15 @@ body{
 /* 
 added flex values, notably a flex basis of 30vw for the left container to occupy 30% of the viewport
 100vh to occupy the whole viewport height
-
+added background image and contain the size
 */
 .left-container{
     flex: 1 1 30vw;
-    border: 5px solid red;
+    border: 5px solid green;
     height: 100vh;
+
+    background: fixed url("../haliewest.jpg");
+    background-size: contain;
 }
 
 /* 
@@ -98,23 +117,49 @@ and use padding-top to pad the top of the container
 added height for the container
 added a 10vw for the margin-top, to create space
 made it a flex container, to align the content in the center with justify-content: center
+added background-color that is semi dark and has transparency
 */
 .logo-container{
     border: 1px solid blue;
     height: 10vw;
     align-self: start;
+
     margin-top: 10vw;
     display: flex;
     justify-content: center;
+
+    background-color: rgb(40,40,49, .3);
+
 }
 
 /*  
 added align-self, to center content along the y axis
+added color of white
+added font-size
 */
 .logo-container p{
     border: 1px solid red;
     align-self: center;
+    color: white;
+    font-family: "Norse";
 
+}
+
+/* 
+override display default of block, to inline-block
+added width and height to predefine icon size
+*/
+.icon img{
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+}
+
+/*
+added font-size for the icon text
+*/
+.icon-text{
+  font-size: 5em;
 }
 
 
