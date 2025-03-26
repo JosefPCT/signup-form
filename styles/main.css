@@ -82,7 +82,7 @@ added flex values, notably a flex basis of 70vw for the right container to occup
 100vh to occupy the whole viewport height
 made a flex container to center content of the right container
 change flex-direction from default to column
-and use justify-content to  center along y axis
+and use padding-top to pad the top of the container
 */
 .right-container {
     flex: 1 1 70vw;
@@ -91,7 +91,7 @@ and use justify-content to  center along y axis
 
     display: flex;
     flex-direction: column;
-   
+    padding-top: 10vw;
 }
 
 /*  
