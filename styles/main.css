@@ -166,8 +166,37 @@ added font-size for the icon text
 }
 
 
-.right-container div{
+/*  
+added padding to all direct containers of right-container div
+*/
+.right-container > div{
+  padding-left: 3vw;
+}
 
+
+/*  
+contain the section into a smaller width
+increase font-size with em
+added margin-bottom to the hero container
+*/
+.hero-section{
+  width: 80%;
+  font-size: 1.5em;
+
+  margin-bottom: 4vw;
+}
+
+.hero-section p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/*
+added margin to the last child
+*/
+div.hero-section p:last-child{
+  margin-top: 2vw;
 }
 
 /*
@@ -178,7 +207,7 @@ create contrast with background -color
 }
 
 form label{
-  
+  text-transform: uppercase;
 }
 
 /* 
@@ -194,4 +223,12 @@ used position: absolute and margin to position labels using span at the top of t
 form span{
   position: absolute;
   margin-left: 20px;
+}
+
+input:valid{
+  border-color: green;
+}
+
+input:invalid{
+  border-color: red;
 }
