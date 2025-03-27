@@ -73,7 +73,7 @@ fixed path
 
 
 div{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 
@@ -89,7 +89,7 @@ added background image and contain the size
 */
 .left-container{
     flex: 1 1 30vw;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     height: 100vh;
 
     background: fixed url("../haliewest.jpg");
@@ -106,7 +106,7 @@ added background-color to darken the container
 */
 .right-container {
     flex: 1 1 70vw;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     height: 100vh;
 
     display: flex;
@@ -123,7 +123,7 @@ made it a flex container, to align the content in the center with justify-conten
 added background-color that is semi dark and has transparency
 */
 .logo-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 10vw;
     align-self: start;
 
@@ -141,7 +141,7 @@ added color of white
 added font-size
 */
 .logo-container p{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-self: center;
     color: white;
     font-family: "Norse";
@@ -202,6 +202,9 @@ div.hero-section p:last-child{
 
 /*
 FORM SECTION
+*/
+
+/*
 create contrast with background -color
 added box-shadow (fix in the future)
 */
@@ -216,26 +219,32 @@ form label{
   line-height: 1;
 }
 
+/*  
+made form a flexbox, and set to wrap
+added a gap between flex items
+added padding then added padding-left: 0 to reset
+*/
 form{
-  border: 1px solid red;
-  width: 100%;
+  /* border: 1px solid red; */
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 5px;
   padding: 15px;
   padding-left: 0px;
 }
 
+/*  
+used flex property to set flex grow to 1, flex shrink to 0, and flex basis to auto
+added margin between div containers
+and made flex to column
+*/
 form div{
-  width: 600px;
+  /* border: 1px dotted red; */
+  flex: 1 0 auto;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
-}
-
-
-
-.form-section div{
-  
 }
 
 
@@ -255,8 +264,13 @@ form span{
 
 }
 
-input:valid{
-  border-color: green;
+input{
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+
+input:user-valid{
+ border-color: blue;
 }
 
 input:invalid{
@@ -284,3 +298,4 @@ button{
   padding: 10px 30px;
   border-radius: 5px;;
 }
+
