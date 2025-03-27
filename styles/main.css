@@ -102,6 +102,7 @@ added flex values, notably a flex basis of 70vw for the right container to occup
 made a flex container to center content of the right container
 change flex-direction from default to column
 and use padding-top to pad the top of the container
+added background-color to darken the container
 */
 .right-container {
     flex: 1 1 70vw;
@@ -111,6 +112,8 @@ and use padding-top to pad the top of the container
     display: flex;
     flex-direction: column;
     padding-top: 10vw;
+
+    background-color: #eee;
 }
 
 /*  
@@ -165,4 +168,30 @@ added font-size for the icon text
 
 .right-container div{
 
+}
+
+/*
+create contrast with background -color
+*/
+.form-section{
+  background-color: #fff;
+}
+
+form label{
+  
+}
+
+/* 
+added margin to all sides to space out inputs
+*/
+form input{
+  margin: 20px;
+}
+
+/*  
+used position: absolute and margin to position labels using span at the top of the inputs
+*/
+form span{
+  position: absolute;
+  margin-left: 20px;
 }
